@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddScheduleActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/light">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD SCHEDULE"
+        android:textAlignment="center"
+        android:background="@color/medium"
+        android:textStyle="bold"
+        android:textColor="@color/dark"/>
+
+    <EditText
+        android:id="@+id/classNameAddScheduleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Class Name eg(cse-1)" />
+
+    <RadioGroup
+        android:id="@+id/dayAddScheduleRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:checkedButton="@+id/mondayAddScheduleRadio"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mondayAddScheduleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark"
+            android:text="M" />
+
+        <RadioButton
+            android:id="@+id/tuesdayAddScheduleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/dark"
+
+            android:textStyle="bold"
+            android:text="T" />
+
+        <RadioButton
+            android:id="@+id/wednesdayAddScheduleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/dark"
+
+            android:textStyle="bold"
+            android:text="W" />
+
+        <RadioButton
+            android:id="@+id/thursdayAddScheduleRadio"
+            android:layout_width="wrap_content"
+
+            android:textColor="@color/dark"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Th" />
+
+        <RadioButton
+            android:id="@+id/fridayAddScheduleRadio"
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="F" />
+
+    </RadioGroup>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:textAlignment="textStart"
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark"
+            android:layout_height="wrap_content"
+            android:text="Lecture Number 1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/lecture1RoomAddScheduleText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="Room Id or Free"
+            android:textAlignment="textStart"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark"
+            android:layout_height="wrap_content"
+            android:text="Lecture Number 2"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/lecture2RoomAddScheduleText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="Room Id or Free"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lecture Number 3"
+            android:textColor="@color/dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/lecture3RoomAddScheduleText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="Room Id or Free"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark"
+            android:layout_height="wrap_content"
+            android:text="Lecture Number 4"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/lecture4RoomAddScheduleText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="Room Id or Free"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lecture Number 5"
+            android:textColor="@color/dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/lecture5RoomAddScheduleText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="Room Id or Free"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lecture Number 6"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/lecture6RoomAddScheduleText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="Room Id or Free"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark"
+            android:layout_height="wrap_content"
+            android:text="Lecture Number 7"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/lecture7RoomAddScheduleText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="Room Id or Free"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lecture Number 8"
+            android:textColor="@color/dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/lecture8RoomAddScheduleText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="Room Id or Free"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark"
+            android:layout_height="wrap_content"
+            android:text="Lecture Number 9"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/lecture9RoomAddScheduleText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="Room Id or Free"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:padding="5dp"
+        android:id="@+id/submitAddScheduleButton"
+        android:layout_width="match_parent"
+        android:textColor="@color/dark"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@color/medium"
+        android:text="SUBMIT DAY WISE" />
+
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewScheduleActivity"
+    android:orientation="vertical"
+    android:background="@color/light">
+
+    <RadioGroup
+        android:id="@+id/dayViewScheduleRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+android:background="@color/medium"
+        android:checkedButton="@+id/mondayViewScheduleRadio"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mondayViewScheduleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:textSize="18sp"
+            android:textColor="@color/dark"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/tuesdayViewScheduleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:textColor="@color/dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/wednesdayViewScheduleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/thursdayViewScheduleRadio"
+            android:textColor="@color/dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Th"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/fridayViewScheduleRadio"
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Long Click on particular class and get its schedule below and if its not showing means that class schedule is not saved on that day ."
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLASSES "
+        android:textAlignment="center"
+        android:background="@color/medium"
+        android:textColor="@color/dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <ListView
+        android:padding="5dp"
+        android:divider="@color/dark"
+        android:dividerHeight="2dp"
+        android:id="@+id/classesViewScheduleListView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SCHEDULE "
+        android:textAlignment="center"
+        android:textColor="@color/dark"
+        android:background="@color/medium"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <ListView
+        android:padding="5dp"
+        android:id="@+id/viewParticularClassViewScheduleListView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:divider="@color/dark"
+        android:dividerHeight="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp" />
+</LinearLayout>
